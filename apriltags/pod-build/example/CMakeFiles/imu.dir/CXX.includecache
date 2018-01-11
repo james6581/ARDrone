@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp
+fcntl.h
+-
+termios.h
+-
+stdlib.h
+-
+iostream
+-
+sstream
+-
+unistd.h
+-
+Serial.h
+/mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.h
+
+/mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.h
+string
+-
+
+/mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/imu.cpp
+iostream
+-
+string
+-
+stdio.h
+-
+math.h
+-
+Serial.h
+/mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.h
+
