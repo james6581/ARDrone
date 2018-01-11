@@ -1,4 +1,4 @@
-prefix=/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build
+prefix=/home/jamesouo/ar_drone/apriltags/build
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

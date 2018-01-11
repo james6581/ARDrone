@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example
+# Install script for directory: /home/jamesouo/ar_drone/apriltags/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build")
+  set(CMAKE_INSTALL_PREFIX "/home/jamesouo/ar_drone/apriltags/build")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,15 +37,15 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo"
-         RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib")
+         RPATH "/home/jamesouo/ar_drone/apriltags/build/lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/bin/apriltags_demo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/jamesouo/ar_drone/apriltags/pod-build/bin/apriltags_demo")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo"
-         OLD_RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/lib:/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib:"
-         NEW_RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib")
+         OLD_RPATH "/home/jamesouo/ar_drone/apriltags/pod-build/lib:/home/jamesouo/ar_drone/apriltags/build/lib:/usr/local/lib:"
+         NEW_RPATH "/home/jamesouo/ar_drone/apriltags/build/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo")
     endif()
@@ -57,15 +57,15 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo"
-         RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib")
+         RPATH "/home/jamesouo/ar_drone/apriltags/build/lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/bin/drone_demo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/jamesouo/ar_drone/apriltags/pod-build/bin/drone_demo")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo"
-         OLD_RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/lib:/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib:"
-         NEW_RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib")
+         OLD_RPATH "/home/jamesouo/ar_drone/apriltags/pod-build/lib:/home/jamesouo/ar_drone/apriltags/build/lib:/usr/local/lib:"
+         NEW_RPATH "/home/jamesouo/ar_drone/apriltags/build/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo")
     endif()
@@ -77,15 +77,15 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu"
-         RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib")
+         RPATH "/home/jamesouo/ar_drone/apriltags/build/lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/bin/imu")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/jamesouo/ar_drone/apriltags/pod-build/bin/imu")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu"
-         OLD_RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/lib:/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib:"
-         NEW_RPATH "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build/lib")
+         OLD_RPATH "/home/jamesouo/ar_drone/apriltags/pod-build/lib:/home/jamesouo/ar_drone/apriltags/build/lib:/usr/local/lib:"
+         NEW_RPATH "/home/jamesouo/ar_drone/apriltags/build/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu")
     endif()

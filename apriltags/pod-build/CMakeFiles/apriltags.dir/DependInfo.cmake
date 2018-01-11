@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/Edge.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Edge.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/FloatImage.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/FloatImage.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/GLine2D.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/GLine2D.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/GLineSegment2D.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/Gaussian.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Gaussian.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/GrayModel.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/GrayModel.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/Homography33.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Homography33.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/MathUtil.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/MathUtil.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/Quad.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Quad.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/Segment.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Segment.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/TagDetection.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/TagDetection.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/TagDetector.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/TagDetector.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/TagFamily.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/TagFamily.cc.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/src/UnionFindSimple.cc" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/Edge.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Edge.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/FloatImage.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/FloatImage.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/GLine2D.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/GLine2D.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/GLineSegment2D.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/Gaussian.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Gaussian.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/GrayModel.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/GrayModel.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/Homography33.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Homography33.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/MathUtil.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/MathUtil.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/Quad.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Quad.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/Segment.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/Segment.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/TagDetection.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/TagDetection.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/TagDetector.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/TagDetector.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/TagFamily.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/TagFamily.cc.o"
+  "/home/jamesouo/ar_drone/apriltags/src/UnionFindSimple.cc" "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -28,7 +28,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../AprilTags"
   "../."
   "/opt/local/include"
-  "/usr/include/opencv"
+  "/usr/local/include"
+  "/usr/local/include/opencv"
   "/usr/include/eigen3"
   )
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example/CMakeFiles/imu.dir/Serial.cpp.o"
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/imu.cpp" "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example/CMakeFiles/imu.dir/imu.cpp.o"
+  "/home/jamesouo/ar_drone/apriltags/example/Serial.cpp" "/home/jamesouo/ar_drone/apriltags/pod-build/example/CMakeFiles/imu.dir/Serial.cpp.o"
+  "/home/jamesouo/ar_drone/apriltags/example/imu.cpp" "/home/jamesouo/ar_drone/apriltags/pod-build/example/CMakeFiles/imu.dir/imu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,13 +16,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../AprilTags"
   "../."
   "/opt/local/include"
-  "/usr/include/opencv"
+  "/usr/local/include"
+  "/usr/local/include/opencv"
   "/usr/include/eigen3"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/DependInfo.cmake"
+  "/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

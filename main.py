@@ -29,6 +29,7 @@ def main():
         time.sleep(0.1)
     print("Battery: " + str(drone.getBattery()[0]) + "%  " + str(drone.getBattery()[1]))
     drone.useDemoMode(True)
+    drone.setConfigAllID()
     drone.sdVideo()
     drone.groundCam()
     drone.stopVideo()
@@ -61,8 +62,13 @@ def main():
 
         if 'image' in detection and len(detection['tags']):
             for tag in detection['tags']:
-                id = tag["id"]
-                point = tags[id]
+                id_tag = tag["id"]
+                point = tags[str(id_tag)]
                 print(str(point))
+                dist_x = tag["dist_z"]
+                dist_y = tag["dist_y"]
+                curPos = (point[0] - dist_x, point[1] + dist_y)
+		pprint(curPos)
+
 
 main()

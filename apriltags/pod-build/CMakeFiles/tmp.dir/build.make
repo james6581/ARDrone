@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/muse/Desktop/ar_drone/apriltags
+CMAKE_SOURCE_DIR = /home/jamesouo/ar_drone/apriltags
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build
+CMAKE_BINARY_DIR = /home/jamesouo/ar_drone/apriltags/pod-build
 
 # Utility rule file for tmp.
 
@@ -67,6 +67,6 @@ CMakeFiles/tmp.dir/clean:
 .PHONY : CMakeFiles/tmp.dir/clean
 
 CMakeFiles/tmp.dir/depend:
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/muse/Desktop/ar_drone/apriltags /mnt/c/Users/muse/Desktop/ar_drone/apriltags /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles/tmp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jamesouo/ar_drone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jamesouo/ar_drone/apriltags /home/jamesouo/ar_drone/apriltags /home/jamesouo/ar_drone/apriltags/pod-build /home/jamesouo/ar_drone/apriltags/pod-build /home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/tmp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tmp.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/muse/Desktop/ar_drone/apriltags
+CMAKE_SOURCE_DIR = /home/jamesouo/ar_drone/apriltags
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build
+CMAKE_BINARY_DIR = /home/jamesouo/ar_drone/apriltags/pod-build
 
 # Include any dependencies generated for this target.
 include example/CMakeFiles/imu.dir/depend.make
@@ -59,16 +59,16 @@ include example/CMakeFiles/imu.dir/flags.make
 
 example/CMakeFiles/imu.dir/imu.cpp.o: example/CMakeFiles/imu.dir/flags.make
 example/CMakeFiles/imu.dir/imu.cpp.o: ../example/imu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/imu.dir/imu.cpp.o"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imu.dir/imu.cpp.o -c /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/imu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/imu.dir/imu.cpp.o"
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imu.dir/imu.cpp.o -c /home/jamesouo/ar_drone/apriltags/example/imu.cpp
 
 example/CMakeFiles/imu.dir/imu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imu.dir/imu.cpp.i"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/imu.cpp > CMakeFiles/imu.dir/imu.cpp.i
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/example/imu.cpp > CMakeFiles/imu.dir/imu.cpp.i
 
 example/CMakeFiles/imu.dir/imu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imu.dir/imu.cpp.s"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/imu.cpp -o CMakeFiles/imu.dir/imu.cpp.s
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/example/imu.cpp -o CMakeFiles/imu.dir/imu.cpp.s
 
 example/CMakeFiles/imu.dir/imu.cpp.o.requires:
 
@@ -83,16 +83,16 @@ example/CMakeFiles/imu.dir/imu.cpp.o.provides.build: example/CMakeFiles/imu.dir/
 
 example/CMakeFiles/imu.dir/Serial.cpp.o: example/CMakeFiles/imu.dir/flags.make
 example/CMakeFiles/imu.dir/Serial.cpp.o: ../example/Serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/CMakeFiles/imu.dir/Serial.cpp.o"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imu.dir/Serial.cpp.o -c /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/CMakeFiles/imu.dir/Serial.cpp.o"
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imu.dir/Serial.cpp.o -c /home/jamesouo/ar_drone/apriltags/example/Serial.cpp
 
 example/CMakeFiles/imu.dir/Serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imu.dir/Serial.cpp.i"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp > CMakeFiles/imu.dir/Serial.cpp.i
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/example/Serial.cpp > CMakeFiles/imu.dir/Serial.cpp.i
 
 example/CMakeFiles/imu.dir/Serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imu.dir/Serial.cpp.s"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp -o CMakeFiles/imu.dir/Serial.cpp.s
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/example/Serial.cpp -o CMakeFiles/imu.dir/Serial.cpp.s
 
 example/CMakeFiles/imu.dir/Serial.cpp.o.requires:
 
@@ -117,27 +117,56 @@ bin/imu: example/CMakeFiles/imu.dir/imu.cpp.o
 bin/imu: example/CMakeFiles/imu.dir/Serial.cpp.o
 bin/imu: example/CMakeFiles/imu.dir/build.make
 bin/imu: lib/libapriltags.a
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.9
-bin/imu: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.9
+bin/imu: /usr/local/lib/libopencv_stitching.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_superres.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_videostab.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_photo.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_aruco.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_bgsegm.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_bioinspired.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_ccalib.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_cvv.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_dpm.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_face.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_freetype.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_fuzzy.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_hdf.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_img_hash.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_line_descriptor.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_optflow.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_reg.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_rgbd.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_saliency.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_sfm.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_stereo.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_structured_light.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_viz.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_phase_unwrapping.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_surface_matching.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_tracking.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_datasets.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_plot.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_text.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_dnn.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_xfeatures2d.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_ml.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_shape.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_video.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_ximgproc.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_calib3d.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_features2d.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_flann.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_highgui.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_videoio.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_xobjdetect.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_imgcodecs.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_objdetect.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_xphoto.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_imgproc.so.3.3.1
+bin/imu: /usr/local/lib/libopencv_core.so.3.3.1
 bin/imu: example/CMakeFiles/imu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/imu"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imu.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/imu"
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 example/CMakeFiles/imu.dir/build: bin/imu
@@ -150,10 +179,10 @@ example/CMakeFiles/imu.dir/requires: example/CMakeFiles/imu.dir/Serial.cpp.o.req
 .PHONY : example/CMakeFiles/imu.dir/requires
 
 example/CMakeFiles/imu.dir/clean:
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -P CMakeFiles/imu.dir/cmake_clean.cmake
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -P CMakeFiles/imu.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/imu.dir/clean
 
 example/CMakeFiles/imu.dir/depend:
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/muse/Desktop/ar_drone/apriltags /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example/CMakeFiles/imu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jamesouo/ar_drone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jamesouo/ar_drone/apriltags /home/jamesouo/ar_drone/apriltags/example /home/jamesouo/ar_drone/apriltags/pod-build /home/jamesouo/ar_drone/apriltags/pod-build/example /home/jamesouo/ar_drone/apriltags/pod-build/example/CMakeFiles/imu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/imu.dir/depend
 

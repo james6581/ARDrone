@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/muse/Desktop/ar_drone/apriltags
+CMAKE_SOURCE_DIR = /home/jamesouo/ar_drone/apriltags
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build
+CMAKE_BINARY_DIR = /home/jamesouo/ar_drone/apriltags/pod-build
 
 # Include any dependencies generated for this target.
 include example/CMakeFiles/apriltags_demo.dir/depend.make
@@ -59,16 +59,16 @@ include example/CMakeFiles/apriltags_demo.dir/flags.make
 
 example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o: example/CMakeFiles/apriltags_demo.dir/flags.make
 example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o: ../example/apriltags_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o -c /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/apriltags_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o"
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o -c /home/jamesouo/ar_drone/apriltags/example/apriltags_demo.cpp
 
 example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.i"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/apriltags_demo.cpp > CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.i
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/example/apriltags_demo.cpp > CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.i
 
 example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.s"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/apriltags_demo.cpp -o CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.s
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/example/apriltags_demo.cpp -o CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.s
 
 example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o.requires:
 
@@ -83,16 +83,16 @@ example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o.provides.build: examp
 
 example/CMakeFiles/apriltags_demo.dir/Serial.cpp.o: example/CMakeFiles/apriltags_demo.dir/flags.make
 example/CMakeFiles/apriltags_demo.dir/Serial.cpp.o: ../example/Serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/CMakeFiles/apriltags_demo.dir/Serial.cpp.o"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags_demo.dir/Serial.cpp.o -c /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/CMakeFiles/apriltags_demo.dir/Serial.cpp.o"
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags_demo.dir/Serial.cpp.o -c /home/jamesouo/ar_drone/apriltags/example/Serial.cpp
 
 example/CMakeFiles/apriltags_demo.dir/Serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags_demo.dir/Serial.cpp.i"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp > CMakeFiles/apriltags_demo.dir/Serial.cpp.i
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/example/Serial.cpp > CMakeFiles/apriltags_demo.dir/Serial.cpp.i
 
 example/CMakeFiles/apriltags_demo.dir/Serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags_demo.dir/Serial.cpp.s"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example/Serial.cpp -o CMakeFiles/apriltags_demo.dir/Serial.cpp.s
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && /usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/example/Serial.cpp -o CMakeFiles/apriltags_demo.dir/Serial.cpp.s
 
 example/CMakeFiles/apriltags_demo.dir/Serial.cpp.o.requires:
 
@@ -117,27 +117,56 @@ bin/apriltags_demo: example/CMakeFiles/apriltags_demo.dir/apriltags_demo.cpp.o
 bin/apriltags_demo: example/CMakeFiles/apriltags_demo.dir/Serial.cpp.o
 bin/apriltags_demo: example/CMakeFiles/apriltags_demo.dir/build.make
 bin/apriltags_demo: lib/libapriltags.a
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.9
-bin/apriltags_demo: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.9
+bin/apriltags_demo: /usr/local/lib/libopencv_stitching.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_superres.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_videostab.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_photo.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_aruco.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_bgsegm.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_bioinspired.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_ccalib.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_cvv.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_dpm.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_face.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_freetype.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_fuzzy.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_hdf.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_img_hash.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_line_descriptor.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_optflow.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_reg.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_rgbd.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_saliency.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_sfm.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_stereo.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_structured_light.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_viz.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_phase_unwrapping.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_surface_matching.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_tracking.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_datasets.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_plot.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_text.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_dnn.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_xfeatures2d.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_ml.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_shape.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_video.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_ximgproc.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_calib3d.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_features2d.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_flann.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_highgui.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_videoio.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_xobjdetect.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_imgcodecs.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_objdetect.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_xphoto.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_imgproc.so.3.3.1
+bin/apriltags_demo: /usr/local/lib/libopencv_core.so.3.3.1
 bin/apriltags_demo: example/CMakeFiles/apriltags_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/apriltags_demo"
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/apriltags_demo.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/apriltags_demo"
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/apriltags_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 example/CMakeFiles/apriltags_demo.dir/build: bin/apriltags_demo
@@ -150,10 +179,10 @@ example/CMakeFiles/apriltags_demo.dir/requires: example/CMakeFiles/apriltags_dem
 .PHONY : example/CMakeFiles/apriltags_demo.dir/requires
 
 example/CMakeFiles/apriltags_demo.dir/clean:
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -P CMakeFiles/apriltags_demo.dir/cmake_clean.cmake
+	cd /home/jamesouo/ar_drone/apriltags/pod-build/example && $(CMAKE_COMMAND) -P CMakeFiles/apriltags_demo.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/apriltags_demo.dir/clean
 
 example/CMakeFiles/apriltags_demo.dir/depend:
-	cd /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/muse/Desktop/ar_drone/apriltags /mnt/c/Users/muse/Desktop/ar_drone/apriltags/example /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example /mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example/CMakeFiles/apriltags_demo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jamesouo/ar_drone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jamesouo/ar_drone/apriltags /home/jamesouo/ar_drone/apriltags/example /home/jamesouo/ar_drone/apriltags/pod-build /home/jamesouo/ar_drone/apriltags/pod-build/example /home/jamesouo/ar_drone/apriltags/pod-build/example/CMakeFiles/apriltags_demo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/apriltags_demo.dir/depend
 

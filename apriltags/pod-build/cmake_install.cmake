@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/c/Users/muse/Desktop/ar_drone/apriltags
+# Install script for directory: /home/jamesouo/ar_drone/apriltags
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/build")
+  set(CMAKE_INSTALL_PREFIX "/home/jamesouo/ar_drone/apriltags/build")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,45 +33,45 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/lib/libapriltags.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/jamesouo/ar_drone/apriltags/pod-build/lib/libapriltags.a")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/AprilTags" TYPE FILE FILES
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Edge.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/FloatImage.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Gaussian.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/GLine2D.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/GLineSegment2D.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/GrayModel.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Gridder.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Homography33.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/MathUtil.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/pch.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Quad.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Segment.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Tag16h5.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Tag16h5_other.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Tag25h7.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Tag25h9.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Tag36h11.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Tag36h11_other.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/Tag36h9.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/TagDetection.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/TagDetector.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/TagFamily.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/UnionFindSimple.h"
-    "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/AprilTags/XYWeight.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Tag16h5.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Quad.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Gridder.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Gaussian.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Tag25h9.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/TagFamily.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/pch.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Tag16h5_other.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Tag36h11_other.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/GLine2D.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Segment.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/FloatImage.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/MathUtil.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/TagDetection.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Edge.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/UnionFindSimple.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/GrayModel.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Tag36h11.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/GLineSegment2D.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Homography33.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/TagDetector.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Tag25h7.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/XYWeight.h"
+    "/home/jamesouo/ar_drone/apriltags/AprilTags/Tag36h9.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/lib/pkgconfig/apriltags.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jamesouo/ar_drone/apriltags/pod-build/lib/pkgconfig/apriltags.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/example/cmake_install.cmake")
+  include("/home/jamesouo/ar_drone/apriltags/pod-build/example/cmake_install.cmake")
 
 endif()
 
@@ -83,5 +83,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/muse/Desktop/ar_drone/apriltags/pod-build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jamesouo/ar_drone/apriltags/pod-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
