@@ -8,24 +8,7 @@ import subprocess
 import json
 import numpy
 import math
-
-path = [(0.3,0.3),(0.6,0.6),(0.9,0.6),(1.2,0.3),(1.5,0.6),(1.8,0.6),(2.1,0.6),(2.4,0.9)]
-#path = [(0.3,0),(1.5,0),(0.3,0.6)]
-# tag id with positions
-tags = {"0":(0,0), "1":(0.3,0), "2":(0.6,0), "3":(0.9,0), "4":(1.2,0), "5":(1.5,0), "6":(1.8,0),
-        "7":(0,0.3), "8":(0.3,0.3), "9":(0.6,0.3), "10":(0.9,0.3), "11":(1.2,0.3), "12":(1.5,0.3), "13":(1.8,0.3),
-        "14":(0,0.6), "15":(0.3,0.6), "16":(0.6,0.6), "17":(0.9,0.6), "18":(1.2,0.6), "19":(1.5,0.6), "20":(1.8,0.6),
-        "21":(0,0.9), "22":(0.3,0.9), "23":(0.6,0.9), "24":(0.9,0.9), "25":(1.2,0.9), "26":(1.5,0.9), "27":(1.8,0.9)}
-
-# drone's current position
-global curPos
-curPos = (0.3,0.3)
-
-global curPointCount
-curPointCount = 0
-
-global curPoint
-curPoint = path[0]
+import os
 
 def computeSpeeds(v1, v2):
     v3 = [v1, v2]
@@ -34,31 +17,45 @@ def computeSpeeds(v1, v2):
     u2 = alpha * v2
     return [u1, u2]             
 
-def followWaypoints():
-    global curPointCount
-    global curPos
-    global curPoint
-    while curPointCount <= len(path):
+def followWaypoints(path, curPos, curPointCount, curPoint):
+    if curPointCount < len(path) and path[curPointCount] != -1:
         pprint(curPos)
-        if abs(curPos[0] - curPoint[0]) <= 0.3 and abs(curPos[1] - curPoint[1]) <= 0.3:
-            #drone.stop()
+        if abs(curPos[0] - curPoint[0]) <= 0.1 and abs(curPos[1] - curPoint[1]) <= 0.1:
+        #   drone.stop()
             print("wayPoint arrived")
-            #time.sleep(5)
-            curPointCount+=1
-            curPoint = path[curPointCount]
+        #   time.sleep(5)
+            if curPointCount < len(path)-1:
+                curPointCount+=1
+                curPoint = path[curPointCount]
         else:
             speeds = computeSpeeds(curPoint[0], curPoint[1])
             print("curPointCount" + str(curPointCount))
-            #print("speeds")
-            #pprint(speeds)
-            #drone.move(speeds[0], speeds[1], 0, 0)
+            print("speeds")
+            pprint(speeds)
+        #   drone.move(speeds[0], speeds[1], 0, 0)
     #drone.land()
-        time.sleep(1)
-    print("delivery complete")
+        #time.sleep(1)
+    if path[curPointCount] == -1:
+        print("delivery complete")
+        os._exit(0)
+    return path, curPos, curPointCount, curPoint
 
 
 def main():
-	
+    path = [(0.3,0.3),(0.6,0.6),(0.9,0.6),(1.2,0.3),(1.5,0.6),(1.8,0.6),-1]
+    #path = [(0.3,0),(1.5,0),(0.3,0.6)]
+
+    # tag id with positions
+    tags = {"0":(0,0), "1":(0.3,0), "2":(0.6,0), "3":(0.9,0), "4":(1.2,0), "5":(1.5,0), "6":(1.8,0),
+        "7":(0,0.3), "8":(0.3,0.3), "9":(0.6,0.3), "10":(0.9,0.3), "11":(1.2,0.3), "12":(1.5,0.3), "13":(1.8,0.3),
+        "14":(0,0.6), "15":(0.3,0.6), "16":(0.6,0.6), "17":(0.9,0.6), "18":(1.2,0.6), "19":(1.5,0.6), "20":(1.8,0.6),
+        "21":(0,0.9), "22":(0.3,0.9), "23":(0.6,0.9), "24":(0.9,0.9), "25":(1.2,0.9), "26":(1.5,0.9), "27":(1.8,0.9)}
+
+    # drone's current position, count and point
+    curPos = (0.3,0.3)
+    curPointCount = 0
+    curPoint = path[0]	
+
     # init drone 
     drone = ps_drone.Drone()
     drone.startup()
@@ -106,10 +103,11 @@ def main():
                 #print(str(point))
                 dist_x = tag["dist_z"]
                 dist_y = tag["dist_y"]
-                global curPos
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
-                #followWaypoints()
+                path, curPos, curPointCount, curPoint = followWaypoints(path, curPos, curPointCount, curPoint)
+        else:
+            drone.land()
 
 main()
 
