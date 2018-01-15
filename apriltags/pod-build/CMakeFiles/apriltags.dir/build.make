@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jamesouo/ar_drone/apriltags
+CMAKE_SOURCE_DIR = /home/jamesouo/ARDrone/apriltags
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jamesouo/ar_drone/apriltags/pod-build
+CMAKE_BINARY_DIR = /home/jamesouo/ARDrone/apriltags/pod-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/apriltags.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/apriltags.dir/flags.make
 
 CMakeFiles/apriltags.dir/src/Edge.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/Edge.cc.o: ../src/Edge.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/apriltags.dir/src/Edge.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Edge.cc.o -c /home/jamesouo/ar_drone/apriltags/src/Edge.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/apriltags.dir/src/Edge.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Edge.cc.o -c /home/jamesouo/ARDrone/apriltags/src/Edge.cc
 
 CMakeFiles/apriltags.dir/src/Edge.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/Edge.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/Edge.cc > CMakeFiles/apriltags.dir/src/Edge.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/Edge.cc > CMakeFiles/apriltags.dir/src/Edge.cc.i
 
 CMakeFiles/apriltags.dir/src/Edge.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/Edge.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/Edge.cc -o CMakeFiles/apriltags.dir/src/Edge.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/Edge.cc -o CMakeFiles/apriltags.dir/src/Edge.cc.s
 
 CMakeFiles/apriltags.dir/src/Edge.cc.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/apriltags.dir/src/Edge.cc.o.provides.build: CMakeFiles/apriltags.dir/
 
 CMakeFiles/apriltags.dir/src/TagDetection.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/TagDetection.cc.o: ../src/TagDetection.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/apriltags.dir/src/TagDetection.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/TagDetection.cc.o -c /home/jamesouo/ar_drone/apriltags/src/TagDetection.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/apriltags.dir/src/TagDetection.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/TagDetection.cc.o -c /home/jamesouo/ARDrone/apriltags/src/TagDetection.cc
 
 CMakeFiles/apriltags.dir/src/TagDetection.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/TagDetection.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/TagDetection.cc > CMakeFiles/apriltags.dir/src/TagDetection.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/TagDetection.cc > CMakeFiles/apriltags.dir/src/TagDetection.cc.i
 
 CMakeFiles/apriltags.dir/src/TagDetection.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/TagDetection.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/TagDetection.cc -o CMakeFiles/apriltags.dir/src/TagDetection.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/TagDetection.cc -o CMakeFiles/apriltags.dir/src/TagDetection.cc.s
 
 CMakeFiles/apriltags.dir/src/TagDetection.cc.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/apriltags.dir/src/TagDetection.cc.o.provides.build: CMakeFiles/aprilt
 
 CMakeFiles/apriltags.dir/src/GLine2D.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/GLine2D.cc.o: ../src/GLine2D.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/apriltags.dir/src/GLine2D.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/GLine2D.cc.o -c /home/jamesouo/ar_drone/apriltags/src/GLine2D.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/apriltags.dir/src/GLine2D.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/GLine2D.cc.o -c /home/jamesouo/ARDrone/apriltags/src/GLine2D.cc
 
 CMakeFiles/apriltags.dir/src/GLine2D.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/GLine2D.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/GLine2D.cc > CMakeFiles/apriltags.dir/src/GLine2D.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/GLine2D.cc > CMakeFiles/apriltags.dir/src/GLine2D.cc.i
 
 CMakeFiles/apriltags.dir/src/GLine2D.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/GLine2D.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/GLine2D.cc -o CMakeFiles/apriltags.dir/src/GLine2D.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/GLine2D.cc -o CMakeFiles/apriltags.dir/src/GLine2D.cc.s
 
 CMakeFiles/apriltags.dir/src/GLine2D.cc.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/apriltags.dir/src/GLine2D.cc.o.provides.build: CMakeFiles/apriltags.d
 
 CMakeFiles/apriltags.dir/src/GrayModel.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/GrayModel.cc.o: ../src/GrayModel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/apriltags.dir/src/GrayModel.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/GrayModel.cc.o -c /home/jamesouo/ar_drone/apriltags/src/GrayModel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/apriltags.dir/src/GrayModel.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/GrayModel.cc.o -c /home/jamesouo/ARDrone/apriltags/src/GrayModel.cc
 
 CMakeFiles/apriltags.dir/src/GrayModel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/GrayModel.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/GrayModel.cc > CMakeFiles/apriltags.dir/src/GrayModel.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/GrayModel.cc > CMakeFiles/apriltags.dir/src/GrayModel.cc.i
 
 CMakeFiles/apriltags.dir/src/GrayModel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/GrayModel.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/GrayModel.cc -o CMakeFiles/apriltags.dir/src/GrayModel.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/GrayModel.cc -o CMakeFiles/apriltags.dir/src/GrayModel.cc.s
 
 CMakeFiles/apriltags.dir/src/GrayModel.cc.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/apriltags.dir/src/GrayModel.cc.o.provides.build: CMakeFiles/apriltags
 
 CMakeFiles/apriltags.dir/src/TagDetector.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/TagDetector.cc.o: ../src/TagDetector.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/apriltags.dir/src/TagDetector.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/TagDetector.cc.o -c /home/jamesouo/ar_drone/apriltags/src/TagDetector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/apriltags.dir/src/TagDetector.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/TagDetector.cc.o -c /home/jamesouo/ARDrone/apriltags/src/TagDetector.cc
 
 CMakeFiles/apriltags.dir/src/TagDetector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/TagDetector.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/TagDetector.cc > CMakeFiles/apriltags.dir/src/TagDetector.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/TagDetector.cc > CMakeFiles/apriltags.dir/src/TagDetector.cc.i
 
 CMakeFiles/apriltags.dir/src/TagDetector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/TagDetector.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/TagDetector.cc -o CMakeFiles/apriltags.dir/src/TagDetector.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/TagDetector.cc -o CMakeFiles/apriltags.dir/src/TagDetector.cc.s
 
 CMakeFiles/apriltags.dir/src/TagDetector.cc.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/apriltags.dir/src/TagDetector.cc.o.provides.build: CMakeFiles/aprilta
 
 CMakeFiles/apriltags.dir/src/Quad.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/Quad.cc.o: ../src/Quad.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/apriltags.dir/src/Quad.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Quad.cc.o -c /home/jamesouo/ar_drone/apriltags/src/Quad.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/apriltags.dir/src/Quad.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Quad.cc.o -c /home/jamesouo/ARDrone/apriltags/src/Quad.cc
 
 CMakeFiles/apriltags.dir/src/Quad.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/Quad.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/Quad.cc > CMakeFiles/apriltags.dir/src/Quad.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/Quad.cc > CMakeFiles/apriltags.dir/src/Quad.cc.i
 
 CMakeFiles/apriltags.dir/src/Quad.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/Quad.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/Quad.cc -o CMakeFiles/apriltags.dir/src/Quad.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/Quad.cc -o CMakeFiles/apriltags.dir/src/Quad.cc.s
 
 CMakeFiles/apriltags.dir/src/Quad.cc.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/apriltags.dir/src/Quad.cc.o.provides.build: CMakeFiles/apriltags.dir/
 
 CMakeFiles/apriltags.dir/src/MathUtil.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/MathUtil.cc.o: ../src/MathUtil.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/apriltags.dir/src/MathUtil.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/MathUtil.cc.o -c /home/jamesouo/ar_drone/apriltags/src/MathUtil.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/apriltags.dir/src/MathUtil.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/MathUtil.cc.o -c /home/jamesouo/ARDrone/apriltags/src/MathUtil.cc
 
 CMakeFiles/apriltags.dir/src/MathUtil.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/MathUtil.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/MathUtil.cc > CMakeFiles/apriltags.dir/src/MathUtil.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/MathUtil.cc > CMakeFiles/apriltags.dir/src/MathUtil.cc.i
 
 CMakeFiles/apriltags.dir/src/MathUtil.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/MathUtil.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/MathUtil.cc -o CMakeFiles/apriltags.dir/src/MathUtil.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/MathUtil.cc -o CMakeFiles/apriltags.dir/src/MathUtil.cc.s
 
 CMakeFiles/apriltags.dir/src/MathUtil.cc.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/apriltags.dir/src/MathUtil.cc.o.provides.build: CMakeFiles/apriltags.
 
 CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o: ../src/GLineSegment2D.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o -c /home/jamesouo/ar_drone/apriltags/src/GLineSegment2D.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o -c /home/jamesouo/ARDrone/apriltags/src/GLineSegment2D.cc
 
 CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/GLineSegment2D.cc > CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/GLineSegment2D.cc > CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.i
 
 CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/GLineSegment2D.cc -o CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/GLineSegment2D.cc -o CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.s
 
 CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/apriltags.dir/src/GLineSegment2D.cc.o.provides.build: CMakeFiles/apri
 
 CMakeFiles/apriltags.dir/src/TagFamily.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/TagFamily.cc.o: ../src/TagFamily.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/apriltags.dir/src/TagFamily.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/TagFamily.cc.o -c /home/jamesouo/ar_drone/apriltags/src/TagFamily.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/apriltags.dir/src/TagFamily.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/TagFamily.cc.o -c /home/jamesouo/ARDrone/apriltags/src/TagFamily.cc
 
 CMakeFiles/apriltags.dir/src/TagFamily.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/TagFamily.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/TagFamily.cc > CMakeFiles/apriltags.dir/src/TagFamily.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/TagFamily.cc > CMakeFiles/apriltags.dir/src/TagFamily.cc.i
 
 CMakeFiles/apriltags.dir/src/TagFamily.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/TagFamily.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/TagFamily.cc -o CMakeFiles/apriltags.dir/src/TagFamily.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/TagFamily.cc -o CMakeFiles/apriltags.dir/src/TagFamily.cc.s
 
 CMakeFiles/apriltags.dir/src/TagFamily.cc.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/apriltags.dir/src/TagFamily.cc.o.provides.build: CMakeFiles/apriltags
 
 CMakeFiles/apriltags.dir/src/Homography33.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/Homography33.cc.o: ../src/Homography33.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/apriltags.dir/src/Homography33.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Homography33.cc.o -c /home/jamesouo/ar_drone/apriltags/src/Homography33.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/apriltags.dir/src/Homography33.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Homography33.cc.o -c /home/jamesouo/ARDrone/apriltags/src/Homography33.cc
 
 CMakeFiles/apriltags.dir/src/Homography33.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/Homography33.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/Homography33.cc > CMakeFiles/apriltags.dir/src/Homography33.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/Homography33.cc > CMakeFiles/apriltags.dir/src/Homography33.cc.i
 
 CMakeFiles/apriltags.dir/src/Homography33.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/Homography33.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/Homography33.cc -o CMakeFiles/apriltags.dir/src/Homography33.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/Homography33.cc -o CMakeFiles/apriltags.dir/src/Homography33.cc.s
 
 CMakeFiles/apriltags.dir/src/Homography33.cc.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/apriltags.dir/src/Homography33.cc.o.provides.build: CMakeFiles/aprilt
 
 CMakeFiles/apriltags.dir/src/Gaussian.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/Gaussian.cc.o: ../src/Gaussian.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/apriltags.dir/src/Gaussian.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Gaussian.cc.o -c /home/jamesouo/ar_drone/apriltags/src/Gaussian.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/apriltags.dir/src/Gaussian.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Gaussian.cc.o -c /home/jamesouo/ARDrone/apriltags/src/Gaussian.cc
 
 CMakeFiles/apriltags.dir/src/Gaussian.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/Gaussian.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/Gaussian.cc > CMakeFiles/apriltags.dir/src/Gaussian.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/Gaussian.cc > CMakeFiles/apriltags.dir/src/Gaussian.cc.i
 
 CMakeFiles/apriltags.dir/src/Gaussian.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/Gaussian.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/Gaussian.cc -o CMakeFiles/apriltags.dir/src/Gaussian.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/Gaussian.cc -o CMakeFiles/apriltags.dir/src/Gaussian.cc.s
 
 CMakeFiles/apriltags.dir/src/Gaussian.cc.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/apriltags.dir/src/Gaussian.cc.o.provides.build: CMakeFiles/apriltags.
 
 CMakeFiles/apriltags.dir/src/FloatImage.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/FloatImage.cc.o: ../src/FloatImage.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/apriltags.dir/src/FloatImage.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/FloatImage.cc.o -c /home/jamesouo/ar_drone/apriltags/src/FloatImage.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/apriltags.dir/src/FloatImage.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/FloatImage.cc.o -c /home/jamesouo/ARDrone/apriltags/src/FloatImage.cc
 
 CMakeFiles/apriltags.dir/src/FloatImage.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/FloatImage.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/FloatImage.cc > CMakeFiles/apriltags.dir/src/FloatImage.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/FloatImage.cc > CMakeFiles/apriltags.dir/src/FloatImage.cc.i
 
 CMakeFiles/apriltags.dir/src/FloatImage.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/FloatImage.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/FloatImage.cc -o CMakeFiles/apriltags.dir/src/FloatImage.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/FloatImage.cc -o CMakeFiles/apriltags.dir/src/FloatImage.cc.s
 
 CMakeFiles/apriltags.dir/src/FloatImage.cc.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/apriltags.dir/src/FloatImage.cc.o.provides.build: CMakeFiles/apriltag
 
 CMakeFiles/apriltags.dir/src/Segment.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/Segment.cc.o: ../src/Segment.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/apriltags.dir/src/Segment.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Segment.cc.o -c /home/jamesouo/ar_drone/apriltags/src/Segment.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/apriltags.dir/src/Segment.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/Segment.cc.o -c /home/jamesouo/ARDrone/apriltags/src/Segment.cc
 
 CMakeFiles/apriltags.dir/src/Segment.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/Segment.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/Segment.cc > CMakeFiles/apriltags.dir/src/Segment.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/Segment.cc > CMakeFiles/apriltags.dir/src/Segment.cc.i
 
 CMakeFiles/apriltags.dir/src/Segment.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/Segment.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/Segment.cc -o CMakeFiles/apriltags.dir/src/Segment.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/Segment.cc -o CMakeFiles/apriltags.dir/src/Segment.cc.s
 
 CMakeFiles/apriltags.dir/src/Segment.cc.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/apriltags.dir/src/Segment.cc.o.provides.build: CMakeFiles/apriltags.d
 
 CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o: CMakeFiles/apriltags.dir/flags.make
 CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o: ../src/UnionFindSimple.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o -c /home/jamesouo/ar_drone/apriltags/src/UnionFindSimple.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o"
+	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o -c /home/jamesouo/ARDrone/apriltags/src/UnionFindSimple.cc
 
 CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ar_drone/apriltags/src/UnionFindSimple.cc > CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.i
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamesouo/ARDrone/apriltags/src/UnionFindSimple.cc > CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.i
 
 CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ar_drone/apriltags/src/UnionFindSimple.cc -o CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.s
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamesouo/ARDrone/apriltags/src/UnionFindSimple.cc -o CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.s
 
 CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o.requires:
 
@@ -429,7 +429,7 @@ lib/libapriltags.a: CMakeFiles/apriltags.dir/src/Segment.cc.o
 lib/libapriltags.a: CMakeFiles/apriltags.dir/src/UnionFindSimple.cc.o
 lib/libapriltags.a: CMakeFiles/apriltags.dir/build.make
 lib/libapriltags.a: CMakeFiles/apriltags.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library lib/libapriltags.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library lib/libapriltags.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/apriltags.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/apriltags.dir/link.txt --verbose=$(VERBOSE)
 
@@ -460,6 +460,6 @@ CMakeFiles/apriltags.dir/clean:
 .PHONY : CMakeFiles/apriltags.dir/clean
 
 CMakeFiles/apriltags.dir/depend:
-	cd /home/jamesouo/ar_drone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jamesouo/ar_drone/apriltags /home/jamesouo/ar_drone/apriltags /home/jamesouo/ar_drone/apriltags/pod-build /home/jamesouo/ar_drone/apriltags/pod-build /home/jamesouo/ar_drone/apriltags/pod-build/CMakeFiles/apriltags.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jamesouo/ARDrone/apriltags/pod-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jamesouo/ARDrone/apriltags /home/jamesouo/ARDrone/apriltags /home/jamesouo/ARDrone/apriltags/pod-build /home/jamesouo/ARDrone/apriltags/pod-build /home/jamesouo/ARDrone/apriltags/pod-build/CMakeFiles/apriltags.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/apriltags.dir/depend
 

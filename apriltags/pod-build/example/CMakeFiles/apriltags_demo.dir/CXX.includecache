@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jamesouo/ar_drone/apriltags/example/Serial.cpp
+/home/jamesouo/ARDrone/apriltags/example/Serial.cpp
 fcntl.h
 -
 termios.h
@@ -20,13 +20,13 @@ sstream
 unistd.h
 -
 Serial.h
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 string
 -
 
-/home/jamesouo/ar_drone/apriltags/example/apriltags_demo.cpp
+/home/jamesouo/ARDrone/apriltags/example/apriltags_demo.cpp
 iostream
 -
 cstring
@@ -46,23 +46,23 @@ fcntl.h
 errno.h
 -
 opencv2/opencv.hpp
-/home/jamesouo/ar_drone/apriltags/example/opencv2/opencv.hpp
+/home/jamesouo/ARDrone/apriltags/example/opencv2/opencv.hpp
 AprilTags/TagDetector.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/TagDetector.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/TagDetector.h
 AprilTags/Tag16h5.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag16h5.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag16h5.h
 AprilTags/Tag25h7.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag25h7.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag25h7.h
 AprilTags/Tag25h9.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag25h9.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag25h9.h
 AprilTags/Tag36h9.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag36h9.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag36h9.h
 AprilTags/Tag36h11.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag36h11.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag36h11.h
 unistd.h
 -
 Serial.h
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 cmath
 -
 

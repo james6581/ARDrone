@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jamesouo/ar_drone/apriltags/example/Serial.cpp
+/home/jamesouo/ARDrone/apriltags/example/Serial.cpp
 fcntl.h
 -
 termios.h
@@ -20,13 +20,13 @@ sstream
 unistd.h
 -
 Serial.h
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 string
 -
 
-/home/jamesouo/ar_drone/apriltags/example/imu.cpp
+/home/jamesouo/ARDrone/apriltags/example/imu.cpp
 iostream
 -
 string
@@ -36,5 +36,5 @@ stdio.h
 math.h
 -
 Serial.h
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 

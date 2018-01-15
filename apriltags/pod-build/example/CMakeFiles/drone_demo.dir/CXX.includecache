@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jamesouo/ar_drone/apriltags/example/Serial.cpp
+/home/jamesouo/ARDrone/apriltags/example/Serial.cpp
 fcntl.h
 -
 termios.h
@@ -20,13 +20,13 @@ sstream
 unistd.h
 -
 Serial.h
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 
-/home/jamesouo/ar_drone/apriltags/example/Serial.h
+/home/jamesouo/ARDrone/apriltags/example/Serial.h
 string
 -
 
-/home/jamesouo/ar_drone/apriltags/example/drone_demo.cpp
+/home/jamesouo/ARDrone/apriltags/example/drone_demo.cpp
 iostream
 -
 cstring
@@ -38,43 +38,43 @@ list
 sys/time.h
 -
 rapidjson/document.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/document.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/document.h
 rapidjson/prettywriter.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/prettywriter.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/prettywriter.h
 opencv2/opencv.hpp
-/home/jamesouo/ar_drone/apriltags/example/opencv2/opencv.hpp
+/home/jamesouo/ARDrone/apriltags/example/opencv2/opencv.hpp
 AprilTags/TagDetector.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/TagDetector.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/TagDetector.h
 AprilTags/Tag16h5.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag16h5.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag16h5.h
 AprilTags/Tag25h7.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag25h7.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag25h7.h
 AprilTags/Tag25h9.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag25h9.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag25h9.h
 AprilTags/Tag36h9.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag36h9.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag36h9.h
 AprilTags/Tag36h11.h
-/home/jamesouo/ar_drone/apriltags/example/AprilTags/Tag36h11.h
+/home/jamesouo/ARDrone/apriltags/example/AprilTags/Tag36h11.h
 unistd.h
 -
 cmath
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/allocators.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/allocators.h
 rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/document.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/document.h
 reader.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/reader.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/reader.h
 internal/meta.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/meta.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/meta.h
 internal/strfunc.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/strfunc.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/strfunc.h
 memorystream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/memorystream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/memorystream.h
 encodedstream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/encodedstream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/encodedstream.h
 new
 -
 limits
@@ -84,95 +84,95 @@ iterator
 utility
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/encodedstream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/encodedstream.h
 stream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stream.h
 memorystream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/memorystream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/memorystream.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/encodings.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/encodings.h
 rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/error/error.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/error/error.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/biginteger.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/biginteger.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 intrin.h
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/diyfp.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/diyfp.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 intrin.h
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/dtoa.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/dtoa.h
 itoa.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/itoa.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/itoa.h
 diyfp.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/diyfp.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/diyfp.h
 ieee754.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/ieee754.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/ieee754.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/ieee754.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/ieee754.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/itoa.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/itoa.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/meta.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/meta.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 type_traits
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/pow10.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/pow10.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/stack.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/stack.h
 ../allocators.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/allocators.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/allocators.h
 swap.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/swap.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/swap.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/strfunc.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/strfunc.h
 ../stream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stream.h
 cwchar
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/strtod.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/strtod.h
 ieee754.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/ieee754.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/ieee754.h
 biginteger.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/biginteger.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/biginteger.h
 diyfp.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/diyfp.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/diyfp.h
 pow10.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/pow10.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/pow10.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/swap.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/swap.h
 ../rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/memorystream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/memorystream.h
 stream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stream.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/msinttypes/inttypes.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/msinttypes/inttypes.h
 stdint.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/msinttypes/stdint.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/msinttypes/stdint.h
 inttypes.h
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/msinttypes/stdint.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/msinttypes/stdint.h
 stdint.h
 -
 limits.h
@@ -180,23 +180,23 @@ limits.h
 wchar.h
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/prettywriter.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/prettywriter.h
 writer.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/writer.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/writer.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 cstdlib
 -
 cstring
 -
 rapidjson/...
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson/...
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson/...
 string
 -
 msinttypes/stdint.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/msinttypes/stdint.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/msinttypes/stdint.h
 msinttypes/inttypes.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/msinttypes/inttypes.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/msinttypes/inttypes.h
 stdint.h
 -
 inttypes.h
@@ -204,23 +204,23 @@ inttypes.h
 endian.h
 -
 rapidjson/...
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson/...
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson/...
 cassert
 -
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/reader.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/reader.h
 allocators.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/allocators.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/allocators.h
 stream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stream.h
 encodedstream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/encodedstream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/encodedstream.h
 internal/meta.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/meta.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/meta.h
 internal/stack.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/stack.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/stack.h
 internal/strtod.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/strtod.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/strtod.h
 limits
 -
 intrin.h
@@ -234,43 +234,43 @@ arm_neon.h
 stdexcept
 -
 rapidjson/error/error.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson/error/error.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson/error/error.h
 rapidjson/reader.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson/reader.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson/reader.h
 error/error.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/error/error.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/error/error.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stream.h
 rapidjson.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/rapidjson.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/rapidjson.h
 encodings.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/encodings.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/encodings.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stringbuffer.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stringbuffer.h
 stream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stream.h
 internal/stack.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/stack.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/stack.h
 utility
 -
 internal/stack.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/stack.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/stack.h
 
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/writer.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/writer.h
 stream.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stream.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stream.h
 internal/meta.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/meta.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/meta.h
 internal/stack.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/stack.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/stack.h
 internal/strfunc.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/strfunc.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/strfunc.h
 internal/dtoa.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/dtoa.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/dtoa.h
 internal/itoa.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/internal/itoa.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/internal/itoa.h
 stringbuffer.h
-/home/jamesouo/ar_drone/apriltags/example/rapidjson/stringbuffer.h
+/home/jamesouo/ARDrone/apriltags/example/rapidjson/stringbuffer.h
 new
 -
 intrin.h
