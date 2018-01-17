@@ -73,7 +73,7 @@ def main():
 
     # init video
     #video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1', '-c'], stdout=subprocess.PIPE)
-    video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-s','3'], stdout=subprocess.PIPE)
+    video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
     detection = {'tags': []}
 
     # show frame
