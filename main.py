@@ -16,31 +16,33 @@ def computeSpeeds(x, y):
     speed_y = scalar * y
     return [speed_x, speed_y]             
 
-def followWaypoints(drone, path, curPos, pointCount, targetPoint):
+def followWaypoints(drone, path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds):
     if pointCount < len(path) and path[pointCount] != -1:
         pprint(curPos)
         print(pointCount)
         if abs(curPos[0] - targetPoint[0]) <= 0.1 and abs(curPos[1] - targetPoint[1]) <= 0.1:
             drone.stop()
+            isSpeedComputed = False
             print("wayPoint arrived")
             if pointCount < len(path)-1:
                 pointCount+=1
                 targetPoint = path[pointCount]
             #time.sleep(5)
         else:
-            speeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
-            print("pointCount" + str(pointCount))
-            print("speeds")
-            pprint(speeds)
-            drone.move(speeds[1], speeds[0], 0, 0)
-            #time.sleep(1)
+            if(isSpeedComputed == False):
+                curSpeeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
+                isSpeedComputed = True
+                print("pointCount" + str(pointCount))
+                print("speeds")
+                pprint(curSpeeds)
+                drone.move(curSpeeds[0], curSpeeds[1], 0, 0)
     if path[pointCount] == -1:
         # land
         drone.land()
         print("delivery complete")
         #time.sleep(5)
         os._exit(0)
-    return path, curPos, pointCount, targetPoint
+    return path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds
 
 
 def main():
@@ -57,6 +59,8 @@ def main():
     curPos = (0.3,0.3)
     pointCount = 0
     targetPoint = path[0]
+    isSpeedComputed = False
+    curSpeeds = None
 
     # init drone 
     drone = ps_drone.Drone()
@@ -115,7 +119,7 @@ def main():
                 dist_y = tag["dist_y"]
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
-                path, curPos, pointCount, targetPoint = followWaypoints(drone, path, curPos, pointCount, targetPoint)
+                path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds = followWaypoints(drone, path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds)
         #else:
         #    drone.land()
         #    print("land...")
