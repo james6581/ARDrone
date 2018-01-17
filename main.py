@@ -17,26 +17,27 @@ def computeSpeeds(v1, v2):
     u2 = alpha * v2
     return [u1, u2]             
 
-def followWaypoints(path, curPos, curPointCount, curPoint):
+def followWaypoints(drone, path, curPos, curPointCount, curPoint):
     if curPointCount < len(path) and path[curPointCount] != -1:
         pprint(curPos)
         if abs(curPos[0] - curPoint[0]) <= 0.1 and abs(curPos[1] - curPoint[1]) <= 0.1:
-        #   drone.stop()
+            drone.stop()
             print("wayPoint arrived")
-        #   time.sleep(5)
             if curPointCount < len(path)-1:
                 curPointCount+=1
                 curPoint = path[curPointCount]
+            time.sleep(5)
         else:
             speeds = computeSpeeds(curPoint[0], curPoint[1])
             print("curPointCount" + str(curPointCount))
             print("speeds")
             pprint(speeds)
-        #   drone.move(speeds[0], speeds[1], 0, 0)
-    #drone.land()
-        #time.sleep(1)
+            drone.move(speeds[0], speeds[1], 0, 0)
     if path[curPointCount] == -1:
+        # land
+        drone.land()
         print("delivery complete")
+        time.sleep(5)
         os._exit(0)
     return path, curPos, curPointCount, curPoint
 
@@ -80,6 +81,10 @@ def main():
     cv2.namedWindow('image', cv2.WINDOW_AUTOSIZE)
     cv2.imshow('image', image)
 	
+    # take off
+    print("taking off...")
+    drone.takeoff()
+	
     # loop
     for count in range(10000):
         # get detection data
@@ -105,7 +110,7 @@ def main():
                 dist_y = tag["dist_y"]
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
-                path, curPos, curPointCount, curPoint = followWaypoints(path, curPos, curPointCount, curPoint)
+                path, curPos, curPointCount, curPoint = followWaypoints(drone, path, curPos, curPointCount, curPoint)
         else:
             drone.land()
 
