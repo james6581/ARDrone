@@ -11,7 +11,7 @@ import math
 import os
 
 def computeSpeeds(x, y):
-    scalar = 0.05 / math.sqrt(pow(x, 2) + pow(y, 2))
+    scalar = 0.008 / math.sqrt(pow(x, 2) + pow(y, 2))
     speed_x = scalar * x
     speed_y = scalar * y
     return [speed_x, speed_y]             
@@ -19,31 +19,33 @@ def computeSpeeds(x, y):
 def followWaypoints(drone, path, curPos, pointCount, targetPoint):
     if pointCount < len(path) and path[pointCount] != -1:
         pprint(curPos)
+        print(pointCount)
         if abs(curPos[0] - targetPoint[0]) <= 0.1 and abs(curPos[1] - targetPoint[1]) <= 0.1:
             drone.stop()
             print("wayPoint arrived")
             if pointCount < len(path)-1:
                 pointCount+=1
-                target = path[pointCount]
-            time.sleep(5)
+                targetPoint = path[pointCount]
+            #time.sleep(5)
         else:
             speeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
             print("pointCount" + str(pointCount))
             print("speeds")
             pprint(speeds)
-            drone.move(speeds[0], speeds[1], 0, 0)
+            drone.move(speeds[1], speeds[0], 0, 0)
+            #time.sleep(1)
     if path[pointCount] == -1:
         # land
         drone.land()
         print("delivery complete")
-        time.sleep(5)
+        #time.sleep(5)
         os._exit(0)
     return path, curPos, pointCount, targetPoint
 
 
 def main():
-    path = [(0.3,0.3),(0.6,0),(0.9,0.3),(1.2,0.3),(1.2,0.6),(1.5,0.6),-1]
-    #path = [(0.3,0),(1.5,0),(0.3,0.6)]
+    #path = [(0.3,0.3),(0.6,0),(0.9,0.3),(1.2,0.3),(1.2,0.6),(1.5,0.6),-1]
+    path = [(0.3,0.3),(1.8,0.3),-1]
 
     # tag id with positions
     tags = {"0":(0,0), "1":(0.3,0), "2":(0.6,0), "3":(0.9,0), "4":(1.2,0), "5":(1.5,0), "6":(1.8,0),
@@ -72,7 +74,7 @@ def main():
 
     # init video
     #video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1', '-c'], stdout=subprocess.PIPE)
-    video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
+    video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-s','3'], stdout=subprocess.PIPE)
     detection = {'tags': []}
 
     # show frame
@@ -96,7 +98,7 @@ def main():
             if raw.startswith('#'):
                 detection = json.loads(raw[1:])
         else:
-            video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
+            video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-s','3'], stdout=subprocess.PIPE)
             detection = {'tags': []}
             drone.hover()
 			
@@ -113,7 +115,7 @@ def main():
                 dist_y = tag["dist_y"]
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
-                path, curPos, curPointCount, curPoint = followWaypoints(drone, path, curPos, curPointCount, curPoint)
+                path, curPos, pointCount, targetPoint = followWaypoints(drone, path, curPos, pointCount, targetPoint)
         #else:
         #    drone.land()
         #    print("land...")
