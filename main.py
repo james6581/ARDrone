@@ -10,37 +10,35 @@ import numpy
 import math
 import os
 
-def computeSpeeds(v1, v2):
-    v3 = [v1, v2]
-    alpha = 0.05 / math.sqrt(pow(v1, 2) + pow(v2, 2))
-    u1 = alpha * v1
-    u2 = alpha * v2
-    print("compute")
-    return [u1, u2]             
+def computeSpeeds(x, y):
+    scalar = 0.05 / math.sqrt(pow(x, 2) + pow(y, 2))
+    speed_x = scalar * x
+    speed_y = scalar * y
+    return [speed_x, speed_y]             
 
-def followWaypoints(drone, path, curPos, curPointCount, curPoint):
-    if curPointCount < len(path) and path[curPointCount] != -1:
+def followWaypoints(drone, path, curPos, pointCount, targetPoint):
+    if pointCount < len(path) and path[pointCount] != -1:
         pprint(curPos)
-        if abs(curPos[0] - curPoint[0]) <= 0.1 and abs(curPos[1] - curPoint[1]) <= 0.1:
+        if abs(curPos[0] - targetPoint[0]) <= 0.1 and abs(curPos[1] - targetPoint[1]) <= 0.1:
             drone.stop()
             print("wayPoint arrived")
-            if curPointCount < len(path)-1:
-                curPointCount+=1
-                curPoint = path[curPointCount]
+            if pointCount < len(path)-1:
+                pointCount+=1
+                target = path[pointCount]
             time.sleep(5)
         else:
-            speeds = computeSpeeds(curPoint[0], curPoint[1])
-            print("curPointCount" + str(curPointCount))
+            speeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
+            print("pointCount" + str(pointCount))
             print("speeds")
             pprint(speeds)
             drone.move(speeds[0], speeds[1], 0, 0)
-    if path[curPointCount] == -1:
+    if path[pointCount] == -1:
         # land
         drone.land()
         print("delivery complete")
         time.sleep(5)
         os._exit(0)
-    return path, curPos, curPointCount, curPoint
+    return path, curPos, pointCount, targetPoint
 
 
 def main():
@@ -55,8 +53,8 @@ def main():
 
     # drone's current position, count and point
     curPos = (0.3,0.3)
-    curPointCount = 0
-    curPoint = path[0]	
+    pointCount = 0
+    targetPoint = path[0]
 
     # init drone 
     drone = ps_drone.Drone()
@@ -98,7 +96,7 @@ def main():
             if raw.startswith('#'):
                 detection = json.loads(raw[1:])
         else:
-            video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-s','3'], stdout=subprocess.PIPE)
+            video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
             detection = {'tags': []}
             drone.hover()
 			
