@@ -15,6 +15,7 @@ def computeSpeeds(v1, v2):
     alpha = 0.05 / math.sqrt(pow(v1, 2) + pow(v2, 2))
     u1 = alpha * v1
     u2 = alpha * v2
+    print("compute")
     return [u1, u2]             
 
 def followWaypoints(drone, path, curPos, curPointCount, curPoint):
@@ -43,12 +44,12 @@ def followWaypoints(drone, path, curPos, curPointCount, curPoint):
 
 
 def main():
-    path = [(0.3,0.3),(0.6,0.6),(0.9,0.6),(1.2,0.3),(1.5,0.6),(1.8,0.6),-1]
+    path = [(0.3,0.3),(0.6,0),(0.9,0.3),(1.2,0.3),(1.2,0.6),(1.5,0.6),-1]
     #path = [(0.3,0),(1.5,0),(0.3,0.6)]
 
     # tag id with positions
     tags = {"0":(0,0), "1":(0.3,0), "2":(0.6,0), "3":(0.9,0), "4":(1.2,0), "5":(1.5,0), "6":(1.8,0),
-        "7":(0,0.3), "8":(0.3,0.3), "9":(0.6,0.3), "10":(0.9,0.3), "11":(1.2,0.3), "12":(1.5,0.3), "13":(1.8,0.3),
+        "7":(0,0.3), "8":(0.3,0.3), "9":(0.6,0.3),  "10":(0.9,0.3), "11":(1.2,0.3), "12":(1.5,0.3), "13":(1.8,0.3),
         "14":(0,0.6), "15":(0.3,0.6), "16":(0.6,0.6), "17":(0.9,0.6), "18":(1.2,0.6), "19":(1.5,0.6), "20":(1.8,0.6),
         "21":(0,0.9), "22":(0.3,0.9), "23":(0.6,0.9), "24":(0.9,0.9), "25":(1.2,0.9), "26":(1.5,0.9), "27":(1.8,0.9)}
 
@@ -84,9 +85,13 @@ def main():
     # take off
     print("taking off...")
     drone.takeoff()
-	
+    time.sleep(10)
+    stop = False
     # loop
     for count in range(10000):
+        key = drone.getKey()
+        if key == " ":
+             drone.land()
         # get detection data
         if video.poll() is None:
             raw = video.stdout.readline()
@@ -111,8 +116,9 @@ def main():
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
                 path, curPos, curPointCount, curPoint = followWaypoints(drone, path, curPos, curPointCount, curPoint)
-        else:
-            drone.land()
+        #else:
+        #    drone.land()
+        #    print("land...")
 
 main()
 
