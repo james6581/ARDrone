@@ -16,22 +16,25 @@ def computeSpeeds(x, y):
     speed_y = scalar * y
     return [speed_x, speed_y]             
 
-def followWaypoints(drone, path, curPos, pointCount, targetPoint):
+def followWaypoints(drone, path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds):
     if pointCount < len(path) and path[pointCount] != -1:
         pprint(curPos)
         if abs(curPos[0] - targetPoint[0]) <= 0.1 and abs(curPos[1] - targetPoint[1]) <= 0.1:
             drone.stop()
+            isSpeedComputed = False
             print("wayPoint arrived")
             if pointCount < len(path)-1:
                 pointCount+=1
                 target = path[pointCount]
             time.sleep(5)
         else:
-            speeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
-            print("pointCount" + str(pointCount))
-            print("speeds")
-            pprint(speeds)
-            drone.move(speeds[0], speeds[1], 0, 0)
+            if(isSpeedComputed == False):
+                curSpeeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
+                isSpeedComputed = True
+                print("pointCount" + str(pointCount))
+                print("speeds")
+                pprint(speeds)
+                drone.move(curSpeeds[0], curSpeeds[1], 0, 0)
     if path[pointCount] == -1:
         # land
         drone.land()
@@ -55,6 +58,7 @@ def main():
     curPos = (0.3,0.3)
     pointCount = 0
     targetPoint = path[0]
+	isSpeedComputed = False
 
     # init drone 
     drone = ps_drone.Drone()
@@ -113,7 +117,7 @@ def main():
                 dist_y = tag["dist_y"]
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
-                path, curPos, curPointCount, curPoint = followWaypoints(drone, path, curPos, curPointCount, curPoint)
+                path, curPos, curPointCount, curPoint, isSpeedComputed = followWaypoints(drone, path, curPos, curPointCount, curPoint, isSpeedComputed, curSpeeds)
         #else:
         #    drone.land()
         #    print("land...")
