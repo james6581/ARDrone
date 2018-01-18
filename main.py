@@ -11,38 +11,36 @@ import math
 import os
 
 def computeSpeeds(x, y):
-    scalar = 0.008 / math.sqrt(pow(x, 2) + pow(y, 2))
+    scalar = 0.05 / math.sqrt(pow(x, 2) + pow(y, 2))
     speed_x = scalar * x
     speed_y = scalar * y
     return [speed_x, speed_y]             
 
-def followWaypoints(drone, path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds):
+def followWaypoints(drone, path, curPos, pointCount, targetPoint):
     if pointCount < len(path) and path[pointCount] != -1:
         pprint(curPos)
         print(pointCount)
         if abs(curPos[0] - targetPoint[0]) <= 0.1 and abs(curPos[1] - targetPoint[1]) <= 0.1:
             drone.stop()
-            isSpeedComputed = False
             print("wayPoint arrived")
             if pointCount < len(path)-1:
                 pointCount+=1
                 targetPoint = path[pointCount]
-            #time.sleep(5)
+            time.sleep(5)
         else:
-            if(isSpeedComputed == False):
-                curSpeeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
-                isSpeedComputed = True
-                print("pointCount" + str(pointCount))
-                print("speeds")
-                pprint(curSpeeds)
-                drone.move(curSpeeds[0], curSpeeds[1], 0, 0)
+            speeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
+            print("pointCount" + str(pointCount))
+            print("speeds")
+            pprint(speeds)
+            drone.move(speeds[0], speeds[1], 0.0, 0.0)
+            drone.stop()
+            time.sleep(0.5)
     if path[pointCount] == -1:
         # land
         drone.land()
         print("delivery complete")
-        #time.sleep(5)
-        os._exit(0)
-    return path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds
+        time.sleep(5)
+    return path, curPos, pointCount, targetPoint
 
 
 def main():
@@ -70,7 +68,6 @@ def main():
     while (drone.getBattery()[0] == -1):
         time.sleep(0.1)
     print("Battery: " + str(drone.getBattery()[0]) + "%  " + str(drone.getBattery()[1]))
-    drone.useDemoMode(True)
     drone.setConfigAllID()
     drone.sdVideo()
     drone.groundCam()
@@ -78,7 +75,7 @@ def main():
 
     # init video
     #video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1', '-c'], stdout=subprocess.PIPE)
-    video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-s','3'], stdout=subprocess.PIPE)
+    video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
     detection = {'tags': []}
 
     # show frame
@@ -89,8 +86,7 @@ def main():
     # take off
     print("taking off...")
     drone.takeoff()
-    time.sleep(10)
-    stop = False
+    time.sleep(15)
     # loop
     for count in range(10000):
         key = drone.getKey()
@@ -102,7 +98,7 @@ def main():
             if raw.startswith('#'):
                 detection = json.loads(raw[1:])
         else:
-            video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-s','3'], stdout=subprocess.PIPE)
+            video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
             detection = {'tags': []}
             drone.hover()
 			
@@ -119,7 +115,7 @@ def main():
                 dist_y = tag["dist_y"]
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
-                path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds = followWaypoints(drone, path, curPos, pointCount, targetPoint, isSpeedComputed, curSpeeds)
+                path, curPos, pointCount, targetPoint = followWaypoints(drone, path, curPos, pointCount, targetPoint)
         #else:
         #    drone.land()
         #    print("land...")
