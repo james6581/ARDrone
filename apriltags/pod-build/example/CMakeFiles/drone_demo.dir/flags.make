@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jamesouo/ARDrone/apriltags/pod-build/include -I/home/jamesouo/ARDrone/apriltags/build/include -I/home/jamesouo/ARDrone/apriltags/AprilTags -I/home/jamesouo/ARDrone/apriltags/. -I/opt/local/include -isystem /usr/local/include -isystem /usr/local/include/opencv -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/jamesouo/ARDrone/apriltags/pod-build/include -I/home/jamesouo/ARDrone/apriltags/build/include -I/home/jamesouo/ARDrone/apriltags/AprilTags -I/home/jamesouo/ARDrone/apriltags/. -I/opt/local/include -isystem /opt/ros/kinetic/include/opencv-3.3.1 -isystem /opt/ros/kinetic/include/opencv-3.3.1/opencv -I/usr/include/eigen3 
 

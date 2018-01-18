@@ -251,6 +251,7 @@ public:
         m_cap = cv::VideoCapture("tcp://192.168.1.1:5555");
     else
         m_cap = cv::VideoCapture(m_deviceId);
+    //m_cap.set(CV_CAP_PROP_BUFFERSIZE, 3);
     if(!m_cap.isOpened()) {
       cerr << "ERROR: Can't find video device\n";
       exit(1);

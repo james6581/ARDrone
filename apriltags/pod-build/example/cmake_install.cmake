@@ -44,7 +44,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo"
-         OLD_RPATH "/home/jamesouo/ARDrone/apriltags/pod-build/lib:/home/jamesouo/ARDrone/apriltags/build/lib:/usr/local/lib:"
+         OLD_RPATH "/home/jamesouo/ARDrone/apriltags/pod-build/lib:/home/jamesouo/ARDrone/apriltags/build/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "/home/jamesouo/ARDrone/apriltags/build/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/apriltags_demo")
@@ -64,7 +64,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo"
-         OLD_RPATH "/home/jamesouo/ARDrone/apriltags/pod-build/lib:/home/jamesouo/ARDrone/apriltags/build/lib:/usr/local/lib:"
+         OLD_RPATH "/home/jamesouo/ARDrone/apriltags/pod-build/lib:/home/jamesouo/ARDrone/apriltags/build/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "/home/jamesouo/ARDrone/apriltags/build/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/drone_demo")
@@ -84,7 +84,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu"
-         OLD_RPATH "/home/jamesouo/ARDrone/apriltags/pod-build/lib:/home/jamesouo/ARDrone/apriltags/build/lib:/usr/local/lib:"
+         OLD_RPATH "/home/jamesouo/ARDrone/apriltags/pod-build/lib:/home/jamesouo/ARDrone/apriltags/build/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "/home/jamesouo/ARDrone/apriltags/build/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/imu")

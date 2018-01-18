@@ -28,8 +28,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../AprilTags"
   "../."
   "/opt/local/include"
-  "/usr/local/include"
-  "/usr/local/include/opencv"
+  "/opt/ros/kinetic/include/opencv-3.3.1"
+  "/opt/ros/kinetic/include/opencv-3.3.1/opencv"
   "/usr/include/eigen3"
   )
 

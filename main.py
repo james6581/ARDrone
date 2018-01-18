@@ -10,8 +10,13 @@ import numpy
 import math
 import os
 
+def tick(sec):
+    t0 = time.time()
+    diff = 0.0
+    while diff < sec:
+        diff = time.time() - t0
 def computeSpeeds(x, y):
-    scalar = 0.05 / math.sqrt(pow(x, 2) + pow(y, 2))
+    scalar = 0.03 / math.sqrt(pow(x, 2) + pow(y, 2))
     speed_x = scalar * x
     speed_y = scalar * y
     return [speed_x, speed_y]             
@@ -26,20 +31,24 @@ def followWaypoints(drone, path, curPos, pointCount, targetPoint):
             if pointCount < len(path)-1:
                 pointCount+=1
                 targetPoint = path[pointCount]
-            time.sleep(5)
         else:
             speeds = computeSpeeds(targetPoint[0]-curPos[0], targetPoint[1]-curPos[1])
             print("pointCount" + str(pointCount))
             print("speeds")
             pprint(speeds)
-            drone.move(speeds[0], speeds[1], 0.0, 0.0)
+            drone.move(speeds[1], speeds[0], 0.0, 0.0)
+            #tick(0.5)
+            #drone.stop()
+            #tick(0.5)
+            time.sleep(1.5)
             drone.stop()
-            time.sleep(0.5)
+            #drone.stop()
+            time.sleep(0.1)
     if path[pointCount] == -1:
         # land
         drone.land()
         print("delivery complete")
-        time.sleep(5)
+        #time.sleep(5)
     return path, curPos, pointCount, targetPoint
 
 
@@ -68,6 +77,7 @@ def main():
     while (drone.getBattery()[0] == -1):
         time.sleep(0.1)
     print("Battery: " + str(drone.getBattery()[0]) + "%  " + str(drone.getBattery()[1]))
+    drone.useDemoMode(True)    
     drone.setConfigAllID()
     drone.sdVideo()
     drone.groundCam()
@@ -116,6 +126,7 @@ def main():
                 curPos = (point[0] - dist_x, point[1] + dist_y)
 		#pprint(curPos)
                 path, curPos, pointCount, targetPoint = followWaypoints(drone, path, curPos, pointCount, targetPoint)
+                detection['tags'] = []
         #else:
         #    drone.land()
         #    print("land...")
