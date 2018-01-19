@@ -3,6 +3,7 @@ from __future__ import print_function
 from pprint import pprint
 from subprocess import PIPE, Popen
 from threading  import Thread
+from Queue import Queue, Empty
 import time, sys
 import ps_drone
 import cv2
@@ -10,6 +11,8 @@ import json
 import numpy
 import math
 import os
+import signal
+
 
 def tick(sec):
     t0 = time.time()
@@ -18,7 +21,7 @@ def tick(sec):
         diff = time.time() - t0
 
 def computeSpeeds(x, y):
-    scalar = 0.03 / math.sqrt(pow(x, 2) + pow(y, 2))
+    scalar = 0.05 / math.sqrt(pow(x, 2) + pow(y, 2))
     speed_x = scalar * x
     speed_y = scalar * y
     return [speed_x, speed_y]             
@@ -42,10 +45,9 @@ def moveToTargetPoint(drone, path, curPos, pointCount, targetPoint):
             #tick(0.5)
             #drone.stop()
             #tick(0.5)
-            time.sleep(1.5)
-            drone.stop()
+            #time.sleep(1)
             #drone.stop()
-            time.sleep(0.1)
+            #time.sleep(0.3)
     if path[pointCount] == -1:
         # land
         drone.land()
@@ -62,12 +64,12 @@ def getCurPosfromTag(detectedTag,tags):
     return curPos
 	
 def getCurPosfromTags(detectedTags,tags):
-    tempX = None
-    tempY = None
+    tempX = 0
+    tempY = 0
     numDetectedTags = len(detectedTags)
 
-    for detectedTag in detectedTags:
-        curPos = getCurPosfromTag(detectedTag)
+    for detectedTag in detectedTags["tags"]:
+        curPos = getCurPosfromTag(detectedTag,tags)
         tempX += curPos[0]
         tempY += curPos[1]
     
@@ -83,7 +85,7 @@ def enqueue_output(out, queue):
 
 def main():
     #path = [(0.3,0.3),(0.6,0),(0.9,0.3),(1.2,0.3),(1.2,0.6),(1.5,0.6),-1]
-	path = [(0.3,0.3),(1.8,0.3),-1]
+    path = [(0.3,0.3),(1.5,0.3),-1]
 
     # tag id with positions
     tags = {"0":(0,0), "1":(0.3,0), "2":(0.6,0), "3":(0.9,0), "4":(1.2,0), "5":(1.5,0), "6":(1.8,0),
@@ -92,7 +94,7 @@ def main():
         "21":(0,0.9), "22":(0.3,0.9), "23":(0.6,0.9), "24":(0.9,0.9), "25":(1.2,0.9), "26":(1.5,0.9), "27":(1.8,0.9)}
 
     # drone's current position, point count, target point, and detection
-    curPos = None
+    curPos = (0.0,0.0)
     pointCount = 0
     targetPoint = path[0]
     detection = {'tags': []}
@@ -111,12 +113,6 @@ def main():
     drone.groundCam()
     drone.stopVideo()
 
-    # init video
-    try:
-        from Queue import Queue, Empty
-    except ImportError:
-        from queue import Queue, Empty  # python 3.x
-
     ON_POSIX = 'posix' in sys.builtin_module_names
 
     video = Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=PIPE, bufsize=1, close_fds=ON_POSIX)
@@ -124,6 +120,7 @@ def main():
     t = Thread(target=enqueue_output, args=(video.stdout, q))
     t.daemon = True
     t.start()
+    detection = {'tags': []}
 
     # show frame
     image = numpy.zeros((360, 640))
@@ -143,20 +140,26 @@ def main():
         if key == " ":
              drone.land()
 
-        # get detection data
         if video.poll() is None:
-            raw = video.stdout.readline()
-            if raw.startswith('#'):
-                detection = json.loads(raw[1:])
+            try:  
+                raw = q.get_nowait()
+            except Empty:
+                print('no output yet')
+            else:
+                if raw.startswith('#'):
+                    detection = json.loads(raw[1:])
         else:
-            video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
+            video = Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=PIPE, bufsize=1, close_fds=ON_POSIX)
             detection = {'tags': []}
             drone.hover()
-
+        
         # calculate current position from detected tags
         if 'image' in detection and len(detection['tags']):
-            curPos = getCurPosfromTags(detection)
-
+            curPos = getCurPosfromTags(detection, tags)
+            #pprint(curPos)
+        else:
+            drone.stop()
+        #cv2.waitKey(500)
         # move to the target point
         path, curPos, pointCount, targetPoint = moveToTargetPoint(drone, path, curPos, pointCount, targetPoint)
 
