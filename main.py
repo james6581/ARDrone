@@ -15,13 +15,14 @@ def tick(sec):
     diff = 0.0
     while diff < sec:
         diff = time.time() - t0
+
 def computeSpeeds(x, y):
     scalar = 0.03 / math.sqrt(pow(x, 2) + pow(y, 2))
     speed_x = scalar * x
     speed_y = scalar * y
     return [speed_x, speed_y]             
 
-def followWaypoints(drone, path, curPos, pointCount, targetPoint):
+def moveToTargetPoint(drone, path, curPos, pointCount, targetPoint):
     if pointCount < len(path) and path[pointCount] != -1:
         pprint(curPos)
         print(pointCount)
@@ -51,6 +52,29 @@ def followWaypoints(drone, path, curPos, pointCount, targetPoint):
         #time.sleep(5)
     return path, curPos, pointCount, targetPoint
 
+def getCurPosfromTag(detectedTag,tags):
+    tagID = detectedTag["id"]
+    tagPos = tags[str(tagID)]
+    distX = detectedTag["dist_z"]
+    distY = detectedTag["dist_y"]
+    curPos = (tagPos[0] - distX, tagPos[1] + distY)
+    return curPos
+	
+def getCurPosfromTags(detectedTags,tags):
+    tempX = None
+    tempY = None
+    numDetectedTags = len(detectedTags)
+
+    for detectedTag in detectedTags:
+        curPos = getCurPosfromTag(detectedTag)
+        tempX += curPos[0]
+        tempY += curPos[1]
+    
+    calibratedX = tempX / numDetectedTags
+    calibratedY = tempY / numDetectedTags
+    
+    return (calibratedX, calibratedY)
+
 
 def main():
     #path = [(0.3,0.3),(0.6,0),(0.9,0.3),(1.2,0.3),(1.2,0.6),(1.5,0.6),-1]
@@ -63,11 +87,9 @@ def main():
         "21":(0,0.9), "22":(0.3,0.9), "23":(0.6,0.9), "24":(0.9,0.9), "25":(1.2,0.9), "26":(1.5,0.9), "27":(1.8,0.9)}
 
     # drone's current position, count and point
-    curPos = (0.3,0.3)
+    curPos = None
     pointCount = 0
     targetPoint = path[0]
-    isSpeedComputed = False
-    curSpeeds = None
 
     # init drone 
     drone = ps_drone.Drone()
@@ -99,9 +121,12 @@ def main():
     time.sleep(15)
     # loop
     for count in range(10000):
+        
+		# manual control of landing for safety
         key = drone.getKey()
         if key == " ":
              drone.land()
+
         # get detection data
         if video.poll() is None:
             raw = video.stdout.readline()
@@ -111,25 +136,13 @@ def main():
             video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
             detection = {'tags': []}
             drone.hover()
-			
-        # detect tag
-        ids = [tag['id'] for tag in detection['tags']]
-        #print('Detect {} tags {}'.format(len(detection['tags']), ids))
 
+        # calculate current position from detected tags
         if 'image' in detection and len(detection['tags']):
-            for tag in detection['tags']:
-                id_tag = tag["id"]
-                point = tags[str(id_tag)]
-                #print(str(point))
-                dist_x = tag["dist_z"]
-                dist_y = tag["dist_y"]
-                curPos = (point[0] - dist_x, point[1] + dist_y)
-		#pprint(curPos)
-                path, curPos, pointCount, targetPoint = followWaypoints(drone, path, curPos, pointCount, targetPoint)
-                detection['tags'] = []
-        #else:
-        #    drone.land()
-        #    print("land...")
+            curPos = getCurPosfromTags(detection)
+
+        # move to the target point
+		path, curPos, pointCount, targetPoint = moveToTargetPoint(drone, path, curPos, pointCount, targetPoint)
 
 main()
 
