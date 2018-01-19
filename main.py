@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 from __future__ import print_function
 from pprint import pprint
+from subprocess import PIPE, Popen
+from threading  import Thread
 import time, sys
 import ps_drone
 import cv2
-import subprocess
 import json
 import numpy
 import math
@@ -28,7 +29,7 @@ def moveToTargetPoint(drone, path, curPos, pointCount, targetPoint):
         print(pointCount)
         if abs(curPos[0] - targetPoint[0]) <= 0.1 and abs(curPos[1] - targetPoint[1]) <= 0.1:
             drone.stop()
-            print("wayPoint arrived")
+            print("targetPoint arrived")
             if pointCount < len(path)-1:
                 pointCount+=1
                 targetPoint = path[pointCount]
@@ -75,10 +76,14 @@ def getCurPosfromTags(detectedTags,tags):
     
     return (calibratedX, calibratedY)
 
+def enqueue_output(out, queue):
+    for line in iter(out.readline, b''):
+        queue.put(line)
+    out.close()
 
 def main():
     #path = [(0.3,0.3),(0.6,0),(0.9,0.3),(1.2,0.3),(1.2,0.6),(1.5,0.6),-1]
-    path = [(0.3,0.3),(1.8,0.3),-1]
+	path = [(0.3,0.3),(1.8,0.3),-1]
 
     # tag id with positions
     tags = {"0":(0,0), "1":(0.3,0), "2":(0.6,0), "3":(0.9,0), "4":(1.2,0), "5":(1.5,0), "6":(1.8,0),
@@ -86,10 +91,11 @@ def main():
         "14":(0,0.6), "15":(0.3,0.6), "16":(0.6,0.6), "17":(0.9,0.6), "18":(1.2,0.6), "19":(1.5,0.6), "20":(1.8,0.6),
         "21":(0,0.9), "22":(0.3,0.9), "23":(0.6,0.9), "24":(0.9,0.9), "25":(1.2,0.9), "26":(1.5,0.9), "27":(1.8,0.9)}
 
-    # drone's current position, count and point
+    # drone's current position, point count, target point, and detection
     curPos = None
     pointCount = 0
     targetPoint = path[0]
+    detection = {'tags': []}
 
     # init drone 
     drone = ps_drone.Drone()
@@ -106,9 +112,18 @@ def main():
     drone.stopVideo()
 
     # init video
-    #video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1', '-c'], stdout=subprocess.PIPE)
-    video = subprocess.Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=subprocess.PIPE)
-    detection = {'tags': []}
+    try:
+        from Queue import Queue, Empty
+    except ImportError:
+        from queue import Queue, Empty  # python 3.x
+
+    ON_POSIX = 'posix' in sys.builtin_module_names
+
+    video = Popen(['apriltags/build/bin/drone_demo', '-D', '-1','-c','-s','3'], stdout=PIPE, bufsize=1, close_fds=ON_POSIX)
+    q = Queue()
+    t = Thread(target=enqueue_output, args=(video.stdout, q))
+    t.daemon = True
+    t.start()
 
     # show frame
     image = numpy.zeros((360, 640))
@@ -119,10 +134,11 @@ def main():
     print("taking off...")
     drone.takeoff()
     time.sleep(15)
-    # loop
+    
+	# loop
     for count in range(10000):
         
-		# manual control of landing for safety
+        # manual control of landing for safety
         key = drone.getKey()
         if key == " ":
              drone.land()
@@ -142,7 +158,7 @@ def main():
             curPos = getCurPosfromTags(detection)
 
         # move to the target point
-		path, curPos, pointCount, targetPoint = moveToTargetPoint(drone, path, curPos, pointCount, targetPoint)
+        path, curPos, pointCount, targetPoint = moveToTargetPoint(drone, path, curPos, pointCount, targetPoint)
 
 main()
 
